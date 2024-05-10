@@ -6,9 +6,9 @@ function binarySearch($arr, $target, $minLength, $maxLength){
     if($arr[$mid] == $target){
         echo $arr[$mid];
     }else if($arr[$mid] < $target){
-        SvFieldList::binarySearch($arr, $target, $mid, $maxLength);
+        binarySearch($arr, $target, $mid, $maxLength);
     }else{
-        SvFieldList::binarySearch($arr, $target, 0, $mid);
+        binarySearch($arr, $target, 0, $mid);
     }
 }
 
